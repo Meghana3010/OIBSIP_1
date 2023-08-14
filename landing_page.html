@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-image: url('https://images.pexels.com/photos/2115971/pexels-photo-2115971.jpeg?cs=srgb&dl=pexels-zoe-pappas-2115971.jpg&fm=jpg');
+      background-size: cover;
+      filter: blur(5px);
+    }
+
+    .content {
+        position: relative;
+      z-index: 1;
+      padding: 20px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.2); /* Adjust alpha (transparency) */
+      display: flex;
+      align-items: center;
+    }
+
+    .block {
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      text-align: center;
+      flex: 1; /* Equal width for each block */
+    }
+
+    .block img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .block h2 {
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+    
+
+    .header{
+        position: relative;
+      z-index: 1;
+      padding: 10px;
+      color: rgb(255, 250, 250);
+      background-color: rgb(22, 21, 21); /* Adjust alpha (transparency) */
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--main-color);
+  }
+  .navbar {
+    display: flex;
+  }
+  .navbar a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+  }
+  .navbar a:hover {
+    color: var(--main-color);
+  }
+  #menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+  }
+
+  .fa {
+  padding: 10px;
+text-align: center;
+  margin: 10px 5px;
+  font-size: 30px;
+  width: 100px;
+}
+.fa-facebook {
+    background: #3B5998;
+  color: rgb(13, 204, 230);
+}
+
+.fa-instagram {
+    background: #125688;
+  color: white;
+}
+.fa-youtube {
+    background: #bb0000;
+  color: white;
+}
+
+.fa:hover {
+    opacity: 0.9;
+}
+.whitecolor{
+    color: white;
+}
+  </style>
+</head>
+<body>
+<div class="header">
+    <a href="#" class="logo">ENCHIRIDION</a>
+         
+    
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#photos">Photos</a>
+            <a href="#services">Service</a>
+            <a href="#contact">Contact</a>
+        </div>
+</div>
+  <div class="background"></div>
+    
+  <div class="content">
+    <div class="block">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt5iCP669NEowaZ1ZolT06G61mJubvuM58Kg&usqp=CAU" alt="Image 1">
+       
+      <p>Are You Ready To Plan A Special Day</p>
+    </div>
+    <div class="block">
+      <img src="https://www.brides.com/thmb/vxGFGGhcMQjg211eXLaTrXHgbhc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/sq-ea8c12ac4c2946738c7d6c3d9c45692f.jpg" alt="Image 2">
+       
+      <p>We Will Organise Your Wedding While You Are Chilling</p>
+    </div>
+    <div class="block">
+      <h2>We Greet You</h2>
+      <p>Love is In The Air<br>
+       We are a team of professionals with a lot of experience, we will discuss and take into account all your wishes, you will be definitely satisfied.
+    </p>
+    </div>
+  </div>
+
+  <div class="footer">
+    
+         
+        <i  class="fa fa-facebook whitecolor" ></i>
+        <i   class="fa fa-instagram"  ></i>  
+        <i  class="fa fa-youtube"  ></i>  
+     
+    
+  </div>
+  
+</body>
+</html>
